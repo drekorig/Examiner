@@ -1,4 +1,4 @@
-## Interface: 11302
+## Interface: 20503
 ## Version: Classic Fan Update
 ## Title: Examiner
 ## Author: Aezay (Earthen Ring EU)
