@@ -77,7 +77,9 @@ end
 function mod:OnClearInspect()
 	self:HasData(nil);
 	self.details:Clear();
-	self:ClearObjects();
+	if self then
+		self:ClearObjects();
+	end
 end
 
 --------------------------------------------------------------------------------------------------------
