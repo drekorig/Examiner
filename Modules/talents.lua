@@ -77,9 +77,7 @@ end
 function mod:OnClearInspect()
 	self:HasData(nil);
 	self.details:Clear();
-	if self then
-		self:ClearObjects();
-	end
+	self:ClearObjects();
 end
 
 --------------------------------------------------------------------------------------------------------
@@ -324,9 +322,13 @@ end
 
 -- Clear Things
 function mod:ClearObjects()
-	sc:Hide();
+	if sc~=nil then
+		sc:Hide();
+	end
 	for i = 1, _G.GetNumTalentTabs() do
-		_G["ExaminerTab"..i]:Hide();
+		if _G["ExaminerTab"..i]~=nil then
+			_G["ExaminerTab"..i]:Hide();
+		end
 	end
 end
 
