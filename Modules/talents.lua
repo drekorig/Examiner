@@ -77,7 +77,6 @@ end
 function mod:OnClearInspect()
 	self:HasData(nil);
 	self.details:Clear();
-	self:ClearObjects();
 end
 
 --------------------------------------------------------------------------------------------------------
@@ -316,18 +315,6 @@ AzMsg("|2Examiner Talent Module:|r blocked path |1"..tier.." x "..i.."|r    left
 				end
 				BRANCH_ARRAY[tier][column].topArrow = type;
 			end
-		end
-	end
-end
-
--- Clear Things
-function mod:ClearObjects()
-	if sc~=nil then
-		sc:Hide();
-	end
-	for i = 1, _G.GetNumTalentTabs() do
-		if _G["ExaminerTab"..i]~=nil then
-			_G["ExaminerTab"..i]:Hide();
 		end
 	end
 end
