@@ -40,7 +40,6 @@ function mod:OnInspect(unit)
 	if (ex.isSelf) then
 		isInspect = nil;
 		self:HasData(true);
-		self:InitTalents();
 	end
 end
 
