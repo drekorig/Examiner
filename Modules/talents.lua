@@ -356,7 +356,7 @@ function mod:InitTalents()
 end
 
 -- Update Talents
-function mod:UpdateTalents()
+function mod.UpdateTalents()
 	--activeSpec = cfg.shownSpec or GetActiveTalentGroup(isInspect);
 	--local uniqueId, tabName, description, icon, pointsSpent, background, previewPointsSpent, bool = GetTalentTabInfo(activeTab,isInspect,nil,activeSpec);
 	--ex:SetBackgroundTexture("Interface\\TalentFrame\\"..background.."-");
